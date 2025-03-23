@@ -4,23 +4,26 @@
     <title>Fifth Question</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleofwuestion1.css" />
+    <link rel="stylesheet" href="css-question5.css" />
+    <script src="js-question.js" defer></script>
 </head>
 <body>
     <div class="header">
         <div id="logo">
             <img id="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8ICuWP7xJUSWCFH5ktSI19PxuBtY_YHrMYw0iT9gFikoUeIXPex6IZP8NSaKT54JHAc&usqp=CAU" />
         </div>
+
         <div id="company-contacts">
             <p>Serging Osmena Boulevard, Corner Juan Luna Avenue 6000 Cebu City CEB</p>
             <p>(032) 505 1700</p>
         </div>
+
         <div id="menu">
-            <button id="menu-button">&bull; &bull; &bull;</button>
-            <div id="dropdown-menu">
-                <a href="about.html">About Us</a>
-                <a href="settings.html">Settings</a>
-                <a href="help.html">Help</a>
+            <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
+            <div class="menu-dropdown" id="menuDropdown">
+                <a href="#" id="aboutus-menu">About Us</a>
+                <a href="#" id="settings-menu">Settings</a>
+                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-report.html" id="report-menu">Report Problem</a>
             </div>
         </div>
     </div>
@@ -81,8 +84,8 @@
         </div>
 
         <div class="button-container">
-            <button class="round-button">Previous</button>
-            <button class="round-button">Next</button>
+            <a href="https://ricksmer.github.io/CSIT210-Website/Guest/html-question4.html"><button class="round-button">Previous</button></a>
+            <a href="#"><button class="round-button">Next</button></a>
         </div>
     </div>
 </body>
