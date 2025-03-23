@@ -109,15 +109,17 @@ body {
 .report-content{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
 
 .report-input{
-  width:95%;
+  width:93%;
+  height: 75vh;
   border-radius: 10px;
-
+  justify-content: flex-start;
+  
   border:solid;
   border-color: #18264b;
   background-color: white;
@@ -126,6 +128,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 3vh;
+
+  box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 #report-page{
@@ -150,7 +155,7 @@ body {
 
 #report-box{
   width: 95%;
-  aspect-ratio: 1/0.1;
+  aspect-ratio: 8/1;
   display: block;
 
   margin-left: auto;
@@ -162,31 +167,113 @@ body {
   border: solid 0.15vw #18264b;
   border-radius: 3px;
 
-  background-color: #838ca4;
-  color:white;
+  background-color: rgba(24, 38, 75, 0.3);
+  color:#18264b;
 
-  font-size: 1.2vw;
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+  resize: none;
 }
 
 #submit-button{
   width:5em;
   display:block;
-  
   margin-left: auto;
   margin-right: 1.1vw;
   padding: 0.5em;
 
+  border-radius: 1vh;
+  border: solid 0.3vh #18264b;
+
   font-size: 1vw;
+
+  background-color: #18264b;
+  color: white;
+}
+
+#submit-button:hover{
+  background-color: white;
+  color:#18264b;
+
+  transition: 
+  background-color 0.2s ease-in-out, 
+  color 0.2s ease-in-out, 
+  border-color 0.2s ease-in-out;
+}
+
+.bottom-content{
+  display: flex;
+  flex-direction: column;
+  width:93%;
+  margin-top: auto;
+  margin-bottom:1vh;
+  padding-top:2vh;
+  padding-bottom:2vh;
+  border-radius: 1vh;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .devs-info{
-  background-color: rgba(0, 0, 0, 0.1);
-  width:95%;
-}
-
-.dev-1{
   display:flex;
-  padding-left:1.1w;
-  margin-right:1.1w;
+  justify-content: center;
+  width:95%;
+
+  padding: 1vh;
+  margin-top: auto;
+  border-radius: 1vh;
+
+  border:solid 0.1vw white;
+  background-color: rgba(24, 38, 75, 0.85);
 }
 
+.devs-info p{
+  margin-left:0.5vw;
+  margin-right:0.5vw;
+
+  font-size:0.9vw;
+  color:white;
+
+  font-family: 'Poppins', sans-serif;
+  
+  margin-top:0.2vw;
+  margin-bottom:0.2vw;
+}
+
+.dev-pic{
+  width:3vw;
+  height: 3vw;
+  border-radius: 50%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border:solid 0.15vw white;
+  
+}
+
+.dev-1, .dev-2, .dev-3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  margin-top:2vh;
+  width:93%;
+}
+
+.footer p{
+  width:80%;
+  color: #18264b;
+  opacity: 0.8;
+  font-family: 'Poppins', sans-serif;
+  font-size:1vw;
+}
