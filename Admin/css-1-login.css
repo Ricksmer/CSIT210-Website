@@ -6,7 +6,7 @@ body {
   background-color: white;
   height: auto;
   display: flex;
-  margin-top: 25px;
+  gap: 10px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -43,8 +43,8 @@ body {
 }
 
 #menu {
-  margin-top: auto;
-  margin-bottom: auto;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
 }
@@ -60,6 +60,41 @@ body {
   box-shadow: 0;
   border-width: 2px;
   background-color: #18264b;
+  
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#menu-button:hover {
+  background-color: white;
+  color:#18264b;
+  border-color:#18264b;
+}
+
+.menu-dropdown {
+  display:none;
+  top: calc(100% + 5px);
+  right: 0;
+  z-index:1000;
+  position: absolute;
+  background: white;
+  border: solid;
+  border-width: 2px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+}
+
+.menu-dropdown a {
+  display: block;
+  color: #18264b;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+  background-color: #18264b;
+  color:white;
 }
 
 .interface {
