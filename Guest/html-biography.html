@@ -1,36 +1,48 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biographic Questions</title>
-    <link rel="stylesheet" href="css-biography.css" />
-
+    <title>Biography Page</title>
+    <link rel="stylesheet" href="ccs_biography.css" />
+    <script src="js-question.js" defer></script>
 
 </head>
 <body>
     <div class="header">
-        <img src="https://th.bing.com/th/id/R.5343286c6c28be44a90ca0cba050093d?rik=NJWLM%2fXxZ6b04w&riu=http%3a%2f%2fwww.hotelseocompany.co.uk%2fwp-content%2fuploads%2f2013%2f07%2fradisson.jpg&ehk=Q9rdl5cnkQSmDdXw1F94TVoHF0Iow4PuSeDRBcgl0A8%3d&risl=&pid=ImgRaw&r=0" alt="Website Logo" class="logo">
-        <div class="profile-container">
-            <div class="profile-info">
-                <span class="profile-name">John Doe</span>
-                <span class="profile-email">johndoe@example.com</span>
-            </div>
-            <div class="menu-button" onclick="toggleMenu()"></div>
+        <div id="logo">
+            <img id="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8ICuWP7xJUSWCFH5ktSI19PxuBtY_YHrMYw0iT9gFikoUeIXPex6IZP8NSaKT54JHAc&usqp=CAU" />
+        </div>
+
+        <div id="company-contacts">
+            <p>Serging Osmena Boulevard, Corner Juan Luna Avenue 6000 Cebu City CEB</p>
+            <p>(032) 505 1700</p>
+        </div>
+
+        <div id="menu">
+            <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
             <div class="menu-dropdown" id="menuDropdown">
-                <a href="#">About Us</a>
-                <a href="#">Settings</a>
-                <a href="#">Help</a>
+                <a href="#" id="aboutus-menu">About Us</a>
+                <a href="#" id="settings-menu">Settings</a>
+                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-report.html" id="report-menu">Report Problem</a>
             </div>
         </div>
     </div>
     <div class="content">
-        <h3 id="head">Biography</h3><br />
+        <div class="container">
+            <h4>Welcome to Radisson Hotel Survey Page!  
+
+                Thank you for choosing Radisson Hotel for your stay! We value your feedback and strive to provide the best experience for our guests. Your insights help us improve our services and ensure that every visit is exceptional.  
+                
+                Please take a few moments to share your thoughts by completing our survey. Your opinion matters, and we appreciate your time in helping us serve you better.  
+                
+                Thank you for being a valued guest!</h4>
+        </div>
         <br />
-        <div class="description">Additional text or information</div><br />
-        <input type="text" id="description" name="description" style="width: 100%; height: 50px; padding: 10px;" />
-        <div class="description">Additional text or information</div><br />
-        <input type="text" id="description" name="description" style="width: 100%; height: 50px; padding: 10px;" />
+        <div class="description">Additional text or information</div>
+        <input type="text" class="input-box" name="description" placeholder="Enter your response here..." /><br />
+        <div class="description">Additional text or information</div>
+        <input type="text" class="input-box" name="description" placeholder="Enter your response here..." /><br />
         <a href="https://ricksmer.github.io/CSIT210-Website/Guest/html-question1.html"><button class="submit-btn">Next</button></a>
     </div>
     <script>
