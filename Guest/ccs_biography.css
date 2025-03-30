@@ -1,0 +1,184 @@
+    body {
+        background-color: #82b3de;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-image: url('https://media.radissonhotels.net/image/radisson-blu-hotel-cebu/exterior/16256-116570-f64875903_4k.jpg?impolicy=GalleryLightboxFullscreen'); /* Replace with your actual image URL */
+        background-size: cover; /* Ensures the image covers the whole screen */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents repeating */
+        background-attachment: fixed; /* Keeps the background still while scrolling */
+    }
+    
+    .header {
+        width: 95%;
+        background-color: rgb(255, 255, 255);
+        height: auto;
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    #company-logo{
+        display:flex;
+        width:8vw;
+        aspect-ratio:3/2;
+        object-fit: cover;
+        align-content: center;
+    }
+    
+    #company-contacts {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-left:auto;
+        flex-direction:column;
+        margin-right:20px;
+    }
+    
+    #company-contacts p{
+        margin:0;
+        margin-top: 5px;
+        font-size: 1vw;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #menu {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    #menu-button {
+        width: 4vw;
+        font-size: 1vw;
+        aspect-ratio: 2/1;
+        color: white;
+        border-radius: 5px;
+        border-color: white;
+        border: solid;
+        box-shadow: 0;
+        border-width: 2px;
+        background-color: #18264b;
+        
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    
+    #menu-button:hover {
+        background-color: white;
+        color:#18264b;
+        border-color:#18264b;
+    }
+    
+    .menu-dropdown {
+        display:none;
+        top: calc(100% + 5px);
+        right: 0;
+        z-index:1000;
+        position: absolute;
+        background: white;
+        border: solid;
+        border-width: 2px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        border-radius: 5px;
+        width: 150px;
+        padding: 10px;
+    }
+    
+    .menu-dropdown a {
+        display: block;
+        color: #18264b;
+        padding: 10px;
+        text-decoration: none;
+    }
+    
+    .menu-dropdown a:hover {
+        background-color: #18264b;
+        color:white;
+    }
+    
+    /* Here's the magic: show on hover */
+    #menu:hover #dropdown-menu,
+    #menu:focus-within #dropdown-menu {
+    display: block;
+    }
+    
+    .content {
+        padding: 40px;
+        position: relative;
+    }
+
+    .text-placeholder {
+        width: 100%;
+        height: 10px;
+        background: #ddd;
+        margin: 10px 0;
+    }
+
+    .description {
+        background: #e0e0e0;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+        color: black;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .input-box {
+        width: 100%;
+        height: 50px;
+        padding: 15px;
+        border: 2px solid #000; /* Black border to make it visible */
+        background-color: #fff; /* White background */
+        box-sizing: border-box;
+        display: block;
+        border-radius: 5px; /* Optional: Smooth edges */
+    }
+    
+    
+
+    .submit-btn {
+        width: 120px;
+        height: 40px;
+        background: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position:fixed;
+        justify-content: right;
+        right: 40px;
+        bottom: 40px;
+        margin-top: 20px;
+    }
+    #head{
+        color:rgb(0, 0, 0);
+    }
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: left;
+        letter-spacing: 0px;
+    }
+    .container {
+        width: 80%; /* Adjust as needed */
+        max-width: 900px; /* Prevent it from being too wide */
+        margin: 20px auto; /* Center the container */
+        padding: 20px; /* Add spacing inside */
+        background-color: #dddddd; /* Soft background */
+        border-radius: 10px; /* Smooth rounded corners */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        border: 1px solid #ddd; /* Light border */
+    }
+    
