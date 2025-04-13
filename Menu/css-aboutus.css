@@ -98,6 +98,13 @@ body {
   color: white;
 }
 
+#aboutus-menu{
+    background-color: #18264b;
+    opacity: 0.8;
+    color: white;
+    pointer-events: none;
+}
+
 .resume-container {
   width: 96%;
   margin: 5vh auto;
