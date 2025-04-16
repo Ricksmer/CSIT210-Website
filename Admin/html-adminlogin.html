@@ -2,24 +2,20 @@
 <html>
 <head>
     <title>Admin Login Page</title>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css-adminlogin.css" />
-    <script src="js-1-login" defer></script>
-
+    <script src="js-1-login.js" defer></script>
 </head>
 <body>
   <div class="header">
     <div id="logo">
         <img id="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8ICuWP7xJUSWCFH5ktSI19PxuBtY_YHrMYw0iT9gFikoUeIXPex6IZP8NSaKT54JHAc&usqp=CAU" />
     </div>
-
     <div id="company-contacts">
         <p>Serging Osmena Boulevard, Corner Juan Luna Avenue 6000 Cebu City CEB</p>
         <p>(032) 505 1700</p>
     </div>
-
     <div id="menu">
       <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
       <div class="menu-dropdown" id="menuDropdown">
@@ -34,12 +30,20 @@
     <img src="https://media.radissonhotels.net/image/radisson-blu-cebu/exteriorview/16256-116570-f64875903_3xl.jpg?impolicy=HomeHero" id="hotel-image">
     
     <div class="login">
+      <h2>LOGIN</h2>
       <label for="username">Username</label>
-      <input type="text" placeholder="Enter Username"id="username">
-      <br>
+      <input type="text" placeholder="Enter Username" id="username">
+      <div id="username-error" class="error-message"></div>
+
       <label for="password">Password</label>
-      <input type="password" placeholder="Enter Password"id="password">
+      <input type="password" placeholder="Enter Password" id="password">
+      <div id="password-error" class="error-message"></div>
+      
       <button id="login-btn" type="button">LOGIN</button>
+
+      <div class="alt-link-container">
+        <p>Don't have an account? <a href="html-adminregister.html">Register here</a></p>
+      </div>
     </div>
   </div>
 </body>
