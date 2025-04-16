@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Box</title>
+    <link rel="stylesheet" href="suggestion.css">
+    <script src="suggestion.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div id="logo">
+            <img id="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8ICuWP7xJUSWCFH5ktSI19PxuBtY_YHrMYw0iT9gFikoUeIXPex6IZP8NSaKT54JHAc&usqp=CAU" />
+        </div>
+
+        <div id="company-contacts">
+            <p>Serging Osmena Boulevard, Corner Juan Luna Avenue 6000 Cebu City CEB</p>
+            <p>(032) 505 1700</p>
+        </div>
+
+        <div id="menu">
+            <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
+            <div class="menu-dropdown" id="menuDropdown">
+                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-aboutus.html" id="aboutus-menu">About Us</a>
+                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-learnmore.html" id="learnmore-menu">Learn More</a>
+                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-report.html" id="report-menu">Report Problem</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="text-section">
+            <h3>We Value Your Suggestions! 💖</h3>
+            <p>If you have any ideas, comments, or suggestions, we would gladly welcome them! Your</p>
+            <p>simple thought or a detailed opinion, every voice matters. Let us know how we can</p>
+            <p>enhance your experience—we're always listening.</p>
+        </div>
+
+        <div class="feedback-section">
+            <h3>Leave your suggestion</h3>
+            <textarea placeholder="Type your feedback here..."></textarea>
+            <!-- Submit Button placed below the textarea -->
+            <button id="submit-button">Submit</button>
+        </div>
+
+        <div class="image-section">
+            <img src="https://media.radissonhotels.net/image/radisson-blu-cebu/exteriorview/16256-116570-f64875903_3xl.jpg?impolicy=HomeHero" alt="Thank you image">
+        </div>
+    </div>
+</body>
+</html>
