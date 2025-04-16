@@ -197,9 +197,9 @@ body {
   text-decoration: underline;
 }
 
-.error-message {
+#form-error {
   color: red;
   font-size: 2vh;
   margin-top: -0.5vh;
-  margin-bottom: 2.5vh;
+  margin-bottom: 1vh;
 }
