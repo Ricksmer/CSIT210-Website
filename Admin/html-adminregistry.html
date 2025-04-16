@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Registration Page</title>
+  <link rel="stylesheet" href="css-adminregistry.css" />
+  <script src="js-adminregistry.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <div id="logo">
+      <img id="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8ICuWP7xJUSWCFH5ktSI19PxuBtY_YHrMYw0iT9gFikoUeIXPex6IZP8NSaKT54JHAc&usqp=CAU" />
+    </div>
+    <div id="company-contacts">
+      <p>Serging Osmena Boulevard, Corner Juan Luna Avenue 6000 Cebu City CEB</p>
+      <p>(032) 505 1700</p>
+    </div>
+    <div id="menu">
+      <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
+      <div class="menu-dropdown" id="menuDropdown">
+        <a href="#">About Us</a>
+        <a href="#">Settings</a>
+        <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-report.html">Report Problem</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="interface">
+    <img src="https://media.radissonhotels.net/image/radisson-blu-cebu/exteriorview/16256-116570-f64875903_3xl.jpg?impolicy=HomeHero" id="hotel-image" />
+
+    <div class="register">
+      <h2>REGISTER</h2>
+
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" placeholder="Enter First Name" />
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" placeholder="Enter Last Name" />
+
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter Username" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" />
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter Email" />
+
+      <span id="form-error" class="form-error"></span>
+
+      <button id="register-btn" type="button">REGISTER</button>
+
+      <div class="alt-link-container">
+        <p>Already have an account? <a href="html-adminlogin.html">Login here</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
