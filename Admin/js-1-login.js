@@ -12,17 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const password = document.getElementById("password").value.trim();
 
       // Clear previous error messages
-      document.getElementById("username-error").textContent = '';
-      document.getElementById("password-error").textContent = '';
+      document.getElementById("form-error").textContent = '';
 
       // Check if the inputs are empty
-      if (!username) {
-        document.getElementById("username-error").textContent = "Username is required.";
-        return;
-      }
-      
-      if (!password) {
-        document.getElementById("password-error").textContent = "Password is required.";
+      if (!username || !password) {
+        document.getElementById("form-error").textContent = "Please fill in all fields.";
         return;
       }
 
@@ -35,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Login successful!");
         window.location.href = "https://ricksmer.github.io/CSIT210-Website/Admin/html-adminhome.html"; // Redirect to desired page
       } else {
-        document.getElementById("username-error").textContent = "Username or password does not match.";
+        document.getElementById("form-error").textContent = "Username/Password do not match.";
       }
     });
   }
