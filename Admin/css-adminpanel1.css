@@ -116,7 +116,7 @@ body {
     width: 40%;
     height: 80vh;
     margin-bottom: 20px;
-    margin-left: 120px;
+    margin-left: 50px;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
@@ -132,7 +132,7 @@ body {
     width: 220px;
     height: 10vh;
     margin-bottom: 55px;
-    margin-left: 50px;
+    margin-left: 20px;
     position: absolute;
     left: 0;
   
@@ -168,7 +168,7 @@ body {
   padding: 30px;
   width: 220px;
   height: 10vh;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 50px;
   position: absolute;
   left: 0;
@@ -211,7 +211,7 @@ body {
   padding: 30px;
   width: 220px;
   height: 10vh;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 115px;
   position: absolute;
   left: 0;
@@ -253,7 +253,7 @@ body {
   padding: 30px;
   width: 220px;
   height: 10vh;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 180px;
   position: absolute;
   left: 0;
@@ -295,7 +295,7 @@ body {
   padding: 30px;
   width: 220px;
   height: 10vh;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 245px;
   position: absolute;
   left: 0;
@@ -337,7 +337,7 @@ body {
   padding: 30px;
   width: 220px;
   height: 10vh;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 310px;
   position: absolute;
   left: 0;
@@ -369,3 +369,41 @@ body {
   .guestfeedback button:hover {
   background-color: #0f1a34; /* Change color on hover */
   }
+
+  .guestservice-dash { 
+    background-color: white;
+    padding: 20px;
+    width: 688px;
+    height: 74vh;
+    border: 2px solid #18264b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    text-align: left;  
+  }
+
+  .guestservice-dash h3 {
+    margin: 95px auto 45px auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: #18264b;
+    text-align: center;
+  }
+
+  #guestServiceChart {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    margin-left: 25px;
+    margin-top: 2px;
+  }
+  
+  
+  
+  
+
+  
