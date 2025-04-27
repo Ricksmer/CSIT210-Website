@@ -5,9 +5,12 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css-adminpanel1.css" />
+        <link rel="stylesheet" href="css-panel1.css" />
         <script src="js-1-login" defer></script>
         <script src="js-adminpanel.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
     
     </head>
     <body>
@@ -22,12 +25,12 @@
         </div>
     
         <div id="menu">
-            <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
-            <div class="menu-dropdown" id="menuDropdown">
-                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-aboutus.html" id="aboutus-menu">About Us</a>
-                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-learnmore.html" id="learnmore-menu">Learn More</a>
-                <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-report.html" id="report-menu">Report Problem</a>
-            </div>
+          <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
+          <div class="menu-dropdown" id="menuDropdown">
+              <a href="#" id="aboutus-menu">About Us</a>
+              <a href="#" id="settings-menu">Settings</a>
+              <a href="https://ricksmer.github.io/CSIT210-Website/Menu/html-report.html" id="report-menu">Report Problem</a>
+          </div>
         </div>
       </div>
     
@@ -53,6 +56,10 @@
             <div class="guestfeedback">
                 <button class="guestfeedback" type="button">Guest Feedback</button>
             </div>
-        </div>
+
+        <div class="guestservice-dash">
+            <h3>Guest Service</h3> 
+            <canvas id="guestServiceChart" width="300" height="300"></canvas>
+      </div>      
     </body>
 </html>
