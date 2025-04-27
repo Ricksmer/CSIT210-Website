@@ -3,11 +3,6 @@ function toggleMenu() {
   menu.style.display = (menu.style.display === "block") ? "none" : "block";
 }
 
-function toggleMenu() { 
-  let menu = document.getElementById("menuDropdown");
-  menu.style.display = (menu.style.display === "block") ? "none" : "block";
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   const submitButton = document.getElementById('submit-button');
   const reportBox = document.getElementById('report-box');
