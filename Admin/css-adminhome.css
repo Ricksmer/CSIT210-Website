@@ -1,43 +1,38 @@
-body {
-  background-color: white;
-}
 .header {
-  width: 95%;
+  width: 90vw;
   background-color: white;
+  border-radius: 1vh;
   height: auto;
   display: flex;
-  gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 1vh 2vw;
+  margin: 0 auto;
   box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
 }
 
-#company-logo{
-  display:flex;
-  width:8vw;
-  aspect-ratio:3/2;
+#company-logo {
+  width: 8vw;
+  aspect-ratio: 3/2;
   object-fit: cover;
-  align-content: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
 }
 
 #company-contacts {
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-start;
-  margin-left:auto;
-  flex-direction:column;
-  margin-right:20px;
+  justify-content: center;
+  margin-right: 1vw;
 }
 
-#company-contacts p{
-  margin:0;
-  margin-top: 5px;
+#company-contacts p {
+  margin: 0.5vh 0;
   font-size: 1vw;
   font-family: 'Poppins', sans-serif;
 }
@@ -55,351 +50,168 @@ body {
   aspect-ratio: 2/1;
   color: white;
   border-radius: 5px;
-  border-color: white;
-  border: solid;
-  box-shadow: 0;
-  border-width: 2px;
+  border: solid 2px white;
   background-color: #18264b;
-  
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 #menu-button:hover {
   background-color: white;
-  color:#18264b;
-  border-color:#18264b;
+  color: #18264b;
+  border-color: #18264b;
 }
 
 .menu-dropdown {
-  display:none;
-  top: calc(100% + 5px);
+  display: none;
+  top: calc(100% + 0.5vh);
   right: 0;
-  z-index:1000;
+  z-index: 1000;
   position: absolute;
   background: white;
-  border: solid;
-  border-width: 2px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  border: solid 2px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  width: 150px;
-  padding: 10px;
+  width: 15vw;
+  padding: 1vh;
 }
 
 .menu-dropdown a {
   display: block;
   color: #18264b;
-  padding: 10px;
+  padding: 1vh;
   text-decoration: none;
 }
 
 .menu-dropdown a:hover {
   background-color: #18264b;
-  color:white;
+  color: white;
 }
 
-
 .interface {
-  width: 60%;
-  height: 60vh;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  margin-top: 20px;
+  width: 95%;
+  aspect-ratio: 2.5/1;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  background-color: white;
   display: flex;
-  gap: 20px;
+  margin-top: 2vh;
+  justify-content: space-between;
+  border-radius: 3vh;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  justify-content: space-between;
+}
+
+#interfaceImage {
+  width:18%;
+  display: flex;
+  height: 100%;
+  border-radius: 2vh;
+  box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 #hotel-image {
-  width: 40%;
-  height: 80vh;
-  margin-bottom: 20px;
-  margin-left: 120px;
+  width: 100%;
+  display: flex;
+  border-radius: 2vh;
   object-fit: cover;
-  object-position: center;
-  border-radius: 10px;
-  display:flex;
 }
 
-.guestservice {
+#mainInterface {
+  width: 58%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  border-radius: 2vh;
+  border: solid 0.5vh #18264b;
+  padding: 3vh;
+  text-align: left;
+  gap: 2vh;
+  padding-top:15vh;
+  color:#18264b;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+#mainInterface h3{
+  text-align: left;
+  margin-left: 3vw;
+  font-size: 2.5vw;
+  
+}
+
+#mainInterface p{
+  display: flex;
+  font-size: 1.2vw;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 3vw;
+  width: 50%;
+}
+
+
+
+#sidebarButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#sidebar a {
+  text-decoration: none;
+}
+
+.sidebarButton {
+  width: 100%;
+  height: 10vh;
+  background-color: #18264b;
+  border-radius: 1vh;
+  border: solid 0.5vh white;
+  color:white;
+  font-size:1.1vw;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  width: 220px;
-  height: 10vh;
-  margin-bottom: 55px;
-  margin-left: 50px;
-  position: absolute;
-  left: 0;
+  box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
 
+  transition: all ease-in-out 0.2s;
 }
 
-.guestservice input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 2px solid #18264b;
-  border-radius: 5px;
+.sidebarButton:hover{
+  color:#18264b;
+  background-color: white;
+  border:solid 0.5vh #18264b;
+  height:12vh;
+  font-size: 1.3vw;
 }
 
-.guestservice button {
-  padding: 12px;
-  width: 100%;
-  font-size: 18px;
-  font-weight: bold;
+#logoutButton{
+  border: solid 0.3vh #18264b;
+  border-radius: 0.8vh;
+  font-family: 'Poppins', sans-serif;
+  width: 10%;
+  margin-left: auto;
+  margin-right: 3vw;
+  margin-top: 12vh;
+  color: #18264b;
+  font-size: 0.9vw;
+  background-color: white;
+  aspect-ratio: 2.5/1;
+  padding:1vh;
+
+  transition: all ease-in-out 0.2s;
+}
+
+#logoutButton:hover{
+  color:white;
   background-color: #18264b;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  outline: none; /* Remove the outline */
-}
-
-.guestservice button:hover {
-  background-color: #0f1a34; /* Change color on hover */
-}
-
-.roomquality {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 30px;
-width: 220px;
-height: 10vh;
-margin-left: 50px;
-margin-top: 50px;
-position: absolute;
-left: 0;
-
-}
-
-.roomquality input {
-width: 100%;
-padding: 12px;
-margin-bottom: 15px;
-border: 2px solid #18264b;
-border-radius: 5px;
-}
-
-
-.roomquality button {
-padding: 12px;
-width: 100%;
-font-size: 18px;
-font-weight: bold;
-background-color: #18264b;
-color: white;
-border: none;
-border-radius: 15px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-outline: none; /* Remove the outline */
-z-index: 10;
-}
-
-.roomquality button:hover {
-background-color: #0f1a34; /* Change color on hover */
-}
-
-.hotelfacilities {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 30px;
-width: 220px;
-height: 10vh;
-margin-left: 50px;
-margin-top: 115px;
-position: absolute;
-left: 0;
-
-}
-
-.hotelfacilities input {
-width: 100%;
-padding: 12px;
-margin-bottom: 15px;
-border: 2px solid #18264b;
-border-radius: 5px;
-}
-
-.hotelfacilities button {
-padding: 12px;
-width: 100%;
-font-size: 18px;
-font-weight: bold;
-background-color: #18264b;
-color: white;
-border: none;
-border-radius: 15px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-outline: none; /* Remove the outline */
-z-index: 10;
-}
-
-.hotelfacilities button:hover {
-background-color: #0f1a34; /* Change color on hover */
-}
-
-.valuemoney {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 30px;
-width: 220px;
-height: 10vh;
-margin-left: 50px;
-margin-top: 180px;
-position: absolute;
-left: 0;
-
-}
-
-.valuemoney input {
-width: 100%;
-padding: 12px;
-margin-bottom: 15px;
-border: 2px solid #18264b;
-border-radius: 5px;
-}
-
-.valuemoney button {
-padding: 12px;
-width: 100%;
-font-size: 18px;
-font-weight: bold;
-background-color: #18264b;
-color: white;
-border: none;
-border-radius: 15px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-outline: none; /* Remove the outline */
-z-index: 10;
-}
-
-.valuemoney button:hover {
-background-color: #0f1a34; /* Change color on hover */
-}
-
-.overallsatisfaction {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 30px;
-width: 220px;
-height: 10vh;
-margin-left: 50px;
-margin-top: 245px;
-position: absolute;
-left: 0;
-
-}
-
-.overallsatisfaction input {
-width: 100%;
-padding: 12px;
-margin-bottom: 15px;
-border: 2px solid #18264b;
-border-radius: 5px;
-}
-
-.overallsatisfaction button {
-padding: 12px;
-width: 100%;
-font-size: 18px;
-font-weight: bold;
-background-color: #18264b;
-color: white;
-border: none;
-border-radius: 15px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-outline: none; /* Remove the outline */
-}
-
-.overallsatisfaction button:hover {
-background-color: #0f1a34; /* Change color on hover */
-}
-
-
-.guestfeedback {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 30px;
-width: 220px;
-height: 10vh;
-margin-left: 50px;
-margin-top: 310px;
-position: absolute;
-left: 0;
-
-}
-
-.guestfeedback input {
-width: 100%;
-padding: 12px;
-margin-bottom: 15px;
-border: 2px solid #18264b;
-border-radius: 5px;
-}
-
-.guestfeedback button {
-padding: 12px;
-width: 100%;
-font-size: 18px;
-font-weight: bold;
-background-color: #18264b;
-color: white;
-border: none;
-border-radius: 15px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-outline: none; /* Remove the outline */
-}
-
-.guestfeedback button:hover {
-background-color: #0f1a34; /* Change color on hover */
-}
-
-.adminpanel {
-background-color: white;
-padding: 20px;
-width: 630px;
-height: 74vh;
-border: 2px solid #18264b;
-border-radius: 10px;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: flex-start; 
-text-align: left; 
-}
-
-.adminpanel h3 {
-margin: 85px;
-margin-top: 95px;
-margin-bottom: 45px;
-font-size: 20px;
-color: #18264b;
-}
-
-.adminpanel p {
-font-size: 30px;
-color: #18264b;
-text-align: center;
-margin-left: 30px;
+  border:solid 0.5vh white;
 }
