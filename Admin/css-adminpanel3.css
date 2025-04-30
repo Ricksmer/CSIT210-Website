@@ -403,7 +403,7 @@ body {
   .hotelfacilities-dash { /* Box Radius */
     background-color: white;
     padding: 20px;
-    width: 688px;
+    width: 1000px;
     height: 74vh;
     border: 2px solid #18264b;
     border-radius: 10px;
@@ -412,7 +412,8 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start; 
-    text-align: left;  
+    text-align: left;
+    margin-left: 60px;  
 }
 
 .hotelfacilities-dash h3 {
@@ -429,5 +430,13 @@ body {
   color: #18264b;
   text-align: center;
   margin: 30px;
+}
+
+#hotelFacilitiesChart {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-top: 2px;
 }
   
