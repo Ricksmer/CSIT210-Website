@@ -431,4 +431,12 @@ body {
   text-align: center;
   margin: 30px;
 }
+
+#valueforMoneyChart {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-top: 2px;
+}
   
