@@ -434,5 +434,13 @@
   margin: 30px;
 }
 
+#roomQualityChart {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-top: 2px;
+}
+
 
   
