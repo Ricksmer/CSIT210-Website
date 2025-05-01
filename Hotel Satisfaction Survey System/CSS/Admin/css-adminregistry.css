@@ -1,0 +1,198 @@
+.header {
+  width: 90vw;
+  background-color: white;
+  border-radius: 1vh;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
+}
+
+#company-logo {
+  width: 8vw;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+#company-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 1vw;
+}
+
+#company-contacts p {
+  margin: 0.5vh 0;
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+#menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#menu-button {
+  width: 4vw;
+  font-size: 1vw;
+  aspect-ratio: 2/1;
+  color: white;
+  border-radius: 1vh;
+  border: solid 0.5vh white;
+  background-color: #18264b;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#menu-button:hover {
+  background-color: white;
+  color: #18264b;
+  border-color: #18264b;
+}
+
+.menu-dropdown {
+  display: none;
+  top: calc(100% + 0.5vh);
+  right: 0;
+  z-index: 1000;
+  position: absolute;
+  background: white;
+  border: solid 0.3vh;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1vh;
+  width: 15vw;
+  padding: 1vh;
+}
+
+.menu-dropdown a {
+  display: block;
+  color: #18264b;
+  padding: 1vh;
+  text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+  background-color: #18264b;
+  color: white;
+}
+
+.interface {
+  width: 95%;
+  height: 75vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+}
+
+#hotel-image {
+  width: 40%;
+  height: 100%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  display: flex;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5vw;
+  border-radius: 1vh;
+  border: 0.5vh solid #18264b;
+  width: 60%;
+
+  background-color: white;
+  position: relative;
+
+}
+
+.register h2 {
+  text-align: center;
+  font-size: 1.5vw;
+  margin: 0;
+  margin-bottom: 1vh;
+  font-family: 'Poppins', sans-serif;
+  color: #18264b;
+}
+
+.register label {
+  font-size: 0.9vw;
+  margin-bottom: 0.3vh;
+  color: #18264b;
+  font-family: 'Poppins', sans-serif;
+}
+
+#first-name, #last-name, #username, #password, #confirm-password, #email {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5vh;
+  padding: 0.5vw;
+  border: 0.3vh solid #18264b;
+  border-radius: 0.8vh;
+  background-color: white;
+  box-sizing: border-box;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+#register-btn {
+  display: flex;
+  width: 10vw;
+  padding: 1.2vh;
+  background-color: #18264b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1vh;
+  margin-bottom: 0.8vh;
+  font-size: 1.5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#register-btn:hover {
+  background-color: #0f1a34;
+}
+
+.alt-link-container {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.alt-link-container p{
+  margin: 0;
+}
+
+.alt-link-container a {
+  color: #18264b;
+  text-decoration: none;
+}
+
+.alt-link-container a:hover {
+  text-decoration: underline;
+}
+
+.form-error {
+  color: red;
+  font-size: 2vh;
+  margin-top: -0.5vh;
+  margin-bottom: 1vh;
+}

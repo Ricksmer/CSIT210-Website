@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Page</title>
+    <link rel="stylesheet" href="CSS\css-coverpage.css  " />
+    <script src="JS\js-coverpage.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div id="logo">
+            <img id="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8ICuWP7xJUSWCFH5ktSI19PxuBtY_YHrMYw0iT9gFikoUeIXPex6IZP8NSaKT54JHAc&usqp=CAU" />
+        </div>
+
+        <div class="right-section">
+            <div id="company-contacts">
+                <p>Serging Osmena Boulevard, Corner Juan Luna Avenue 6000 Cebu City CEB</p>
+                <p>(032) 505 1700</p>
+            </div>
+
+            <div id="menu">
+                <button id="menu-button" onclick="toggleMenu()">&bull; &bull; &bull;</button>
+                <div class="menu-dropdown" id="menuDropdown">
+                    <a href="HTML\Menu\html-aboutus.html" id="aboutus-menu">About Us</a>
+                    <a href="HTML\Menu\html-learnmore.html" id="learnmore-menu">Learn More</a>
+                    <a href="HTML\Menu\html-report.html" id="report-menu">Report Problem</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="survey-image">
+        <img src="https://media.radissonhotels.net/image/radisson-blu-cebu/exteriorview/16256-116570-f64875903_3xl.jpg?impolicy=HomeHero" id="hotel-image">
+       <a id="survey-link" href="HTML\Guest\html-biography.html" target="_parent">
+           <button id="survey-button"> Answer Survey!</button>
+        </a>
+    </div>
+
+    <div class="login">
+        <a id="login-link" href="HTML\Admin\html-adminlogin.html" target="_parent">
+            <img  id="login-button"src="https://ricksmer.github.io/CSIT210-Website/Sources/LoginLogo.png">
+        </a>
+    </div>
+</body>
+</html>

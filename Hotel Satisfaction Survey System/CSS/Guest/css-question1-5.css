@@ -1,0 +1,250 @@
+﻿.header {
+  width: 90vw;
+  background-color: white;
+  border-radius: 1vh;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px 5px rgba(0, 0, 0, 0.1);
+}
+
+#company-logo {
+  width: 8vw;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+#company-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 1vw;
+}
+
+#company-contacts p {
+  margin: 0.5vh 0;
+  font-size: 1vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+#menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#menu-button {
+  width: 4vw;
+  font-size: 1vw;
+  aspect-ratio: 2/1;
+  color: white;
+  border-radius: 1vh;
+  border: solid 0.5vh white;
+  background-color: #18264b;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#menu-button:hover {
+  background-color: white;
+  color: #18264b;
+  border-color: #18264b;
+}
+
+.menu-dropdown {
+  display: none;
+  top: calc(100% + 0.5vh);
+  right: 0;
+  z-index: 1000;
+  position: absolute;
+  background: white;
+  border: solid 0.3vh;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1vh;
+  width: 15vw;
+  padding: 1vh;
+}
+
+.menu-dropdown a {
+  display: block;
+  color: #18264b;
+  padding: 1vh;
+  text-decoration: none;
+}
+
+.menu-dropdown a:hover {
+  background-color: #18264b;
+  color: white;
+}
+
+
+#label{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#label h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5vh;
+  color: #18264b;
+}
+
+#ratingRow{
+  display: flex;
+  align-self: center;
+  gap:1.5vw;
+  margin-right:0.5vw;
+}
+
+#ratingRow p{
+  border:solid 0.3vh #18264b;
+  border-radius: 1vh;
+  border-bottom: solid 1vh #18264b;
+  padding:0.5vh;
+  padding-left: 0.8vw;
+  padding-right: 0.8vw;
+  margin: none;
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2vw;
+}
+
+.survey-image {
+width: 95%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 25px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.row {
+display: flex;
+border: solid 0.3vh #18264b;
+padding-right:1vh;
+align-items: center;
+margin-bottom: 2vh;
+border-radius: 1.5vh;
+
+}
+
+.content-row {
+flex: 2;
+height: 3rem;
+background-color: #18264b;
+color: white;
+font-family: 'Poppins', sans-serif;
+font-size: 1vw;
+display: flex;
+align-items: center;
+padding: 0 1rem;
+margin-right: 2rem;
+border-radius: 1vh;
+}
+
+.grid-row {
+display: flex;
+justify-self: end;
+gap: 2.05vw;
+margin-right: 0.2vw;
+}
+
+.grid-item {
+  width: 3vh; 
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 0.5vh solid #18264b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.grid-item-inner {
+  width: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+
+.grid-item-inner.toggled {
+  background-color: #18264b;
+}
+
+.button-container {
+display: flex;
+justify-content: space-between;
+margin-top: 5vh;
+}
+
+.round-button {
+width: 7vw;
+padding: 0.5vw;
+border: solid 0.3vh #18264b;
+color: #18264b;
+background-color: white;
+border-radius: 1.2vh;
+cursor: pointer;
+transition: all ease-in-out 0.2s;
+}
+
+.round-button:hover {
+background-color: #18264b;
+}
+.navigator {
+  width: 96%;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  gap:3vw;
+  margin-top:3vh;
+  margin-bottom:5vh;
+}
+
+.nav-btn {
+  width:5%;
+  aspect-ratio: 5/1;
+  border: 2px solid #18264b;
+  background-color: #ffffff;
+  color: #18264b;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+}
+
+.nav-btn.active {
+  border: solid;
+  background-color: #18264b;
+  color: #18264b;
+}
+.container {
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rating-scale {
+  display: grid;
+  grid-template-columns: 200px repeat(5, 1fr);
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+}
+.rating-scale span:first-child {
+  text-align: left;
+}
